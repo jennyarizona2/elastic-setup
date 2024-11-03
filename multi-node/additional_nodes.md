@@ -48,7 +48,7 @@ sudo systemctl status elasticsearch.service
 ```
 13. Optionally, to view the progress as the second Elasticsearch node starts up and connects to the first Elasticsearch node, open a new terminal into the second node and tail the Elasticsearch log file:
 ```bash
-sudo tail -f /var/log/elasticsearch/elasticsearch-demo.log
+sudo tail -f /var/log/elasticsearch/<elastic_cluster_name>.log
 ```
 15. As a final check, run the following curl request on the new node to confirm that Elasticsearch is still running properly and viewable at the new node’s localhost IP address. Note that you need to replace $ELASTIC_PASSWORD with the same elastic superuser password that you used on the first Elasticsearch node.
 ```bash
