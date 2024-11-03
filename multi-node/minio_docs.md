@@ -8,8 +8,6 @@
     * In the menu side-bar, navigate to Buckets -> Create Bucket.
     ![minio bucket](./images/bucket.png)
     * Enter a name for the bucket and click Create.
-    * You should see the bucket in the list of buckets like this:
-    ![minio bucket list](./images/bucket_status.png)
 - Create an access key and secret key
     * In the menu side-bar, navigate Access Keys.
     * Enter a name or any additional information you want for the access key.
@@ -48,4 +46,4 @@
     * Replace my_bucket with the name of the bucket you want to use for storing snapshots.
     * Replace REGION_NAME with the region you obtained from MinIO.
     * Replace Client_Name (in our case we used "default" as the client name).
-    * the default protocol is "https" so "protocol" can be omitted if "https".
+    * The default protocol is "https" so "protocol" can be omitted if "https".
