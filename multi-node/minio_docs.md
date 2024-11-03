@@ -48,3 +48,4 @@
     * Replace my_bucket with the name of the bucket you want to use for storing snapshots.
     * Replace REGION_NAME with the region you obtained from MinIO.
     * Replace Client_Name (in our case we used "default" as the client name).
+    * the default protocol is "https" so "protocol" can be omitted if "https".
