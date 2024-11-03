@@ -25,7 +25,7 @@ ip add
 ```bash
 sudo vi /etc/elasticsearch/elasticsearch.yml
 ```
-3. In a multi-node Elasticsearch cluster, all of the Elasticsearch instances need to have the same name.
+3. In a multi-node Elasticsearch cluster, all Elasticsearch instances need to have the same name.
 In the configuration file, uncomment the line #cluster.name: my-application and give the Elasticsearch instance any name that you’d like:
 ```bash
 cluster.name: elastic-test-cluster
