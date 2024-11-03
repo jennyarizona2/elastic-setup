@@ -74,6 +74,6 @@ the output should look like this:
   "tagline" : "You Know, for Search"
 }
 ``` 
-4. now you should install elastic search in the other nodes and configure it to join the cluster. by following this  [documentation](./other_nodes.md)
+4. now you should install elasticsearch in the other nodes and configure it to join the cluster. by following this  [documentation](./additional_nodes.md)
 
 
