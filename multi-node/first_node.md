@@ -17,7 +17,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch.service
 ```
 ## Step 2: Configure the first Elasticsearch node for connectivity:
-1. In a terminal, run the (run the command ip add in ubuntu or debian) command and copy the value for the host inet IP address (for example, 10.128.0.84). You’ll need this value later.
+1. In a terminal, run the command ip add in ubuntu or debian and copy the value for the host inet IP address (for example, 10.128.0.84). You’ll need this value later.
 ```bash
 ip add
 ```
