@@ -24,9 +24,9 @@ sudo systemctl enable kibana.service
 sudo vim /etc/kibana/kibana.yml
 ```
 7. Uncomment the line #server.host: localhost and replace the default address with the inet value that you copied from the ifconfig command. For example:
-```bash
+
 server.host: 172.31.0.28
-```
+
 8. Start the Kibana service:
 ```bash
 sudo systemctl start kibana.service
