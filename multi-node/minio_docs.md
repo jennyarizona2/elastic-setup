@@ -15,7 +15,7 @@
     * Enter a name or any additional information you want for the access key.
     * Copy the Access Key and Secret Key in a secure place.
     ![minio access key](./images/access_key.png)
-    * click Save.
+    * click Create.
 - Configure Elasticsearch (these steps should be done for all Elasticsearch nodes):
     * First, use elasticsearch-keystore to store the MinIO access key and secret key (specify your client name; in our case, we used "default" for convenience).
     ```bash
