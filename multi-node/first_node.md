@@ -30,9 +30,9 @@ In the configuration file, uncomment the line #cluster.name: my-application and 
 ```bash
 cluster.name: elastic-test-cluster
 ```
-4. By default, Elasticsearch runs on localhost. In order for Elasticsearch instances on other nodes to be able to join the cluster, you’ll need to set up Elasticsearch to run on a routable, external IP address.
+4. By default, Elasticsearch runs on localhost. In order for Elasticsearch instances on other nodes to be able to join the cluster, you’ll need to set up Elasticsearch to run on a routable IP address.
 
-Uncomment the line #network.host: 192.168.0.1 and replace the default address with the value that you copied from the ifconfig command output. For example:
+Uncomment the line #network.host: 192.168.0.1 and replace the default address with the value that you copied from the ifconfig command output (or ip add). For example:
 ```bash
 network.host: (the ip address of the server 'private ip shown using the ip add command' example: 172.31.1.17) 
 ```
