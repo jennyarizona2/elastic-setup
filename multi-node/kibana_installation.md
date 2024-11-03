@@ -9,9 +9,9 @@ sudo apt-get update && sudo apt-get install kibana
 sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 ```
 3. Copy the output of the command, which will look something like this:
-```bash
+
 xxxxxx...1pOcWRlWWd2OGcifQ==
-```
+
 4. in kibana host server, run the following two commands to enable Kibana to run as a service using systemd, enabling Kibana to start automatically when the host system reboots.
 ```bash
 sudo systemctl daemon-reload
