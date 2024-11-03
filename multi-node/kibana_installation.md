@@ -4,7 +4,7 @@
 ```bash
 sudo apt-get update && sudo apt-get install kibana
 ```
-2. (in the master node)Run the elasticsearch-create-enrollment-token command with the -s kibana option to generate a Kibana enrollment token:
+2. (On the first node)Run the elasticsearch-create-enrollment-token command with the -s kibana option to generate a Kibana enrollment token:
 ```bash
 sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
 ```
