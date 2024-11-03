@@ -2,7 +2,7 @@
 ## Official docs for installling a self managed Elastic cluster: https://www.elastic.co/guide/en/elastic-stack/8.15/installing-stack-demo-self.html#install-stack-self-elasticsearch-first
 
 ## Step 1: Set up the first Elasticsearch node
-### important note: you need to paste the output of the installation command into a text file or blocknote to use it later, specifaccly the password of the cluster.
+### important note: you need to paste the output of the installation command into a text file to use it later, specifically the password of the cluster.
 
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
