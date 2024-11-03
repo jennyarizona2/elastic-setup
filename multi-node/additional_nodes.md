@@ -16,9 +16,9 @@ sudo apt-get update && sudo apt-get install elasticsearch
 sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
 ```
 3. Copy the output of the command, which will look something like this:
-```bash
+
 xxxxxx...1pOcWRlWWd2OGcifQ==
-```
+
 4. In the terminal shell of your second Elasticsearch node, pass the enrollment token as a parameter to the elasticsearch-reconfigure-node tool:
 ```bash
 sudo /usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-token <enrollment-token>
