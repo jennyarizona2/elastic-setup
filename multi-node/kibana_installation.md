@@ -38,15 +38,15 @@ sudo systemctl status kibana.service
 10. you will see in the output of status command the follwing:
 a URL is shown with:
 
-A host address to access Kibana
-A six digit verification code
+- A host address to access Kibana
+- A six digit verification code
 
 For example:
 
 Kibana has not been configured.
-Go to http://10.128.0.28:5601/?code=<code> to get started.
+Go to http://10.128.0.28:5601/?code=XXXXXX to get started.
 
-* ⚠️⚠️ if not, you can get the verification code using this command in the node that is running kibana (make sure to copy the code for a later use):
+⚠️⚠️ if not, you can get the verification code using this command in the node that is running kibana (make sure to copy the code for a later use):
 ```bash
 sudo /usr/share/kibana/bin/kibana-verification-code
 ```
