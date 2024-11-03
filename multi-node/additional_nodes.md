@@ -57,4 +57,5 @@ sudo curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic:$ELASTIC_PASS
 ### Set up additional Elasticsearch nodes
 To set up your next Elasticsearch node, follow exactly the same steps as you did previously in this documentation. The process is identical for each additional Elasticsearch node that you would like to add to the cluster. As a recommended best practice, create a new enrollment token for each new node that you add.
 ### To set up dedicated master nodes, please refer to https://opster.com/guides/elasticsearch/high-availability/elasticsearch-dedicated-master-node/ and https://opster.com/guides/elasticsearch/high-availability/elasticsearch-dedicated-master-node/
+### To define the roles of each node, please refer to https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html A restart is needed for the new roles to take place. use _cat/nodes?v=true to confirm the change.
 ### ⚠️⚠️ Note: after joining the cluster nodes, you can install kibana and configure it to connect to the cluster. by following this [documentation](./kibana_installation.md)
