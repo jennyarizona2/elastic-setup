@@ -1,4 +1,4 @@
-## To install kibana, follow these steps (in this test we installed kibana on the same EC2 of the first node):
+## To install kibana, follow these steps (in this example we installed kibana on the same VM of the first node):
 ### Step 1: Install Kibana
 1. Since we already downloaded the public key we could install kibana directly by running the following command:
 ```bash
