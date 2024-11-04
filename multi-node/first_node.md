@@ -1,5 +1,5 @@
-## Official docs for installing ES with Deb package: https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
-## Official docs for installling a self managed Elastic cluster: https://www.elastic.co/guide/en/elastic-stack/8.15/installing-stack-demo-self.html#install-stack-self-elasticsearch-first
+## The official doc for installing ES with Deb package: https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
+## The official doc for installling a self managed Elastic cluster: https://www.elastic.co/guide/en/elastic-stack/8.15/installing-stack-demo-self.html#install-stack-self-elasticsearch-first
 
 ## Step 1: Set up the first Elasticsearch node
 ### important note: you need to paste the output of the installation command into a text file to use it later, specifically the password of the cluster.
