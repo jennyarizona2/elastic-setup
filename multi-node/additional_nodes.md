@@ -1,5 +1,5 @@
-## to install elastic search and configure it after installing the first node follow these steps:
-### Step 1: install elasticsearch (preferably you should save the output of the install command since it contains the password but you will not need because this node gonna join the master node)
+## To install and configure Elasticsearch on additional nodes after setting up the first node, please follow these steps:
+### Step 1: install elasticsearch (preferably you should save the output of the install command since it contains the password but you will not need because this node gonna join the first node)
 1. download the public key and install elasticsearch:
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
@@ -9,7 +9,7 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 sudo apt-get update && sudo apt-get install elasticsearch
 ```
 ### ⚠️⚠️ Note: Don’t start the Elasticsearch service yet! There are a few more configuration steps to do before restarting.
-2. To enable this second Elasticsearch node to connect to the first (master), you need to configure an enrollment token.
+2. To enable this second Elasticsearch node to connect to the first, you need to configure an enrollment token.
 
 * ⚠️⚠️ Return to your terminal shell on the first Elasticsearch node and generate a node enrollment token(An enrollment token has a lifespan of 30 minutes. In case the elasticsearch-reconfigure-node command returns an Invalid enrollment token error, try generating a new token.):
 ```bash
@@ -29,7 +29,7 @@ sudo /usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-to
 ```bash
 sudo vim /etc/elasticsearch/elasticsearch.yml
 ```
-8. In the configuration file, uncomment the line #cluster.name: my-application and set it to match the name you specified for the first Elasticsearch node (master node):
+8. In the configuration file, uncomment the line #cluster.name: my-application and set it to match the name you specified for the first Elasticsearch node:
 ```bash
 cluster.name: elastic-test-cluster
 ```
