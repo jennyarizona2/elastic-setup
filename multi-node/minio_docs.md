@@ -47,3 +47,32 @@
     * Replace REGION_NAME with the region you obtained from MinIO.
     * Replace Client_Name (in our case we used "default" as the client name).
     * The default protocol is "https" so "protocol" can be omitted if "https".
+
+
+- Define the hot/frozen ILM policy
+    * ILM moves indices through the lifecycle according to their age: (either in Kibana Dev Tools or in the terminal with curl)
+    ```shell
+	PUT _ilm/policy/my-policy
+	{
+	  "policy": {
+	    "phases": {
+	      "hot": {
+	        "min_age": "0ms",
+	        "actions": {
+	          "set_priority": {
+	            "priority": 100
+	          }
+	        }
+	      },
+	      "frozen": {
+	        "min_age": "30s",
+	        "actions": {
+	          "searchable_snapshot": {
+	            "snapshot_repository": "minio_repository"
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+    ```
